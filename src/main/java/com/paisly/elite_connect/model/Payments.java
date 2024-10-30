@@ -15,6 +15,6 @@ public class Payments {
     @Id
     private Long paymentID;
     private float amount;
-    private Date paymentDate;
+    //private Date paymentDate;
 
 }

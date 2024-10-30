@@ -20,6 +20,6 @@ public class SimCard {
 
     @ManyToOne
     private SimType typeID;
-    @ManyToOne
-    private Simprovider providerID;
+//    @ManyToOne
+//    private Simprovider providerID;
 }
