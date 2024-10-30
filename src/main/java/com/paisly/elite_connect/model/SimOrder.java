@@ -15,7 +15,7 @@ public class SimOrder {
 
     @OneToMany
     private int simId;
-
+    @OneToOne
     private int paymentId;
 
 }
