@@ -2,6 +2,8 @@ package com.paisly.elite_connect.model;
 
 import com.fasterxml.jackson.annotation.JsonTypeId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +12,7 @@ import org.springframework.stereotype.Component;
 public class CustomerTest {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int customerTestId;
     private String name;
     private String lastName;
@@ -27,6 +30,14 @@ public class CustomerTest {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public int getCustomerTestId() {
+        return customerTestId;
+    }
+
+    public void setCustomerTestId(int customerTestId) {
+        this.customerTestId = customerTestId;
     }
 
     public void setLastName(String lastName) {
